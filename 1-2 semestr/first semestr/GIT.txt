@@ -1,0 +1,6 @@
+cd desktop
+cd repo
+git add название файла или git add . (добавляет все файлы)
+git commit -m "коммент"
+git push origin master 
+git pull origin master

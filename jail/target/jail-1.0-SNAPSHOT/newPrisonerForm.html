@@ -1,0 +1,43 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: Сергей
+  Date: 06.12.2016
+  Time: 11:24
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Add Prisoner</title>
+    <link rel="stylesheet" href="css/newPrisonerForm.css">
+</head>
+<body>
+<div idPrisoner="newPrisoner">
+    <h1>Add prisoner</h1>
+    <fieldset>
+        <form method="post" name="newPrisoner">
+            <input type="text" name="firstname" placeholder="First name" style="border-radius: 3px 3px 0px 0px">
+            <input type="text" name="lastname" placeholder="Last name">
+            <label for="dateOfBirth">Date of birth</label>
+            <input type="date" name="dateOfBirth" idPrisoner="dateOfBirth" placeholder="Date of birth">
+            <label for="detention">Detention</label>
+            <input type="date" name="detention" placeholder="Detention" idPrisoner="detention">
+            <label for="released">Release</label>
+            <input type="date" name="released" placeholder="Release" idPrisoner="released" style="border-radius: 0px 0px 3px 3px">
+            <select name="articles" size = 5 multiple>
+                <option value=”Значение”>Отображаемый текст в списке</option>
+                <option value=”Значение”>Отображаемый текст в списке</option>
+                <option value=”Значение”>Отображаемый текст в списке</option>
+                <option value=”Значение”>Отображаемый текст в списке</option>
+                <option value=”Значение”>Отображаемый текст в списке</option>
+                <option value=”Значение”>Отображаемый текст в списке</option>
+                <option value=”Значение”>Отображаемый текст в списке</option>
+                <option value=”Значение”>Отображаемый текст в списке</option>
+                <option value=”Значение”>Отображаемый текст в списке</option>
+            </select>
+            <input type="submit" value="Add" onclick="document.newPrisoner.action = 'newPrisoner'">
+        </form>
+    </fieldset>
+</div>
+</body>
+</html>

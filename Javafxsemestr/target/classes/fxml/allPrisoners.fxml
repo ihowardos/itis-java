@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="525.0" prefWidth="1257.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.itis.controller.AllPrisonersController">
+    <children>
+        <Label layoutX="436.0" layoutY="34.0" prefHeight="45.0" prefWidth="356.0" text="This is you prisoners list">
+            <font>
+                <Font size="29.0" />
+            </font>
+        </Label>
+        <TableView fx:id="allPrisoners" layoutX="8.0" layoutY="107.0" prefHeight="418.0" prefWidth="1241.0">
+            <columns>
+            <TableColumn fx:id="id" prefWidth="42.0" text="№" />
+                <TableColumn fx:id="firstName" minWidth="0.0" prefWidth="142.0" text="First Name " />
+                <TableColumn fx:id="lastName" minWidth="0.0" prefWidth="135.0" text="Last Name " />
+                <TableColumn fx:id="birthDay" prefWidth="137.0" text="Birthday" />
+                <TableColumn fx:id="sex" prefWidth="71.0" text="Sex" />
+                <TableColumn fx:id="closingDate" prefWidth="138.0" text="Closing date" />
+                <TableColumn fx:id="relativesInf" prefWidth="149.0" text="Relatives Inf" />
+                <TableColumn fx:id="personality" prefWidth="157.0" text="Personality" />
+                <TableColumn fx:id="hierarchy" prefWidth="151.0" text="Hierarchy" />
+                <TableColumn fx:id="camera" prefWidth="119.0" text="Camera" />
+            </columns>
+        </TableView>
+        <Button layoutX="45.0" layoutY="31.0" mnemonicParsing="false" onMouseClicked="#fillTable" prefHeight="25.0" prefWidth="90.0" text="Fill the table" />
+      <Button fx:id="add" layoutX="45.0" layoutY="66.0" mnemonicParsing="false" onMouseClicked="#addNewPrisoner" text="add" />
+      <Button fx:id="delete" layoutX="86.0" layoutY="66.0" mnemonicParsing="false" onMouseClicked="#deletePrisoner" text="delete" />
+      <Button onMouseClicked="#logOut" layoutX="1140.0" layoutY="31.0" mnemonicParsing="false" text="Log Out" />
+    </children>
+</AnchorPane>

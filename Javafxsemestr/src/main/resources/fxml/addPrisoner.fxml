@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="514.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.itis.controller.AddPrisonerController">
+    <children>
+        <Label layoutX="180.0" layoutY="14.0" prefHeight="39.0" prefWidth="191.0" text="New Prisoner">
+            <font>
+                <Font size="27.0" />
+            </font>
+        </Label>
+        <Label layoutX="91.0" layoutY="86.0" text="First Name :">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="91.0" layoutY="130.0" text="Last Name :">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="91.0" layoutY="211.0" text="BirthDay :">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="91.0" layoutY="254.0" prefHeight="21.0" prefWidth="50.0" text="Sex :">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Button fx:id="addPrisonerButton" layoutX="208.0" onMouseClicked="#addPrisoner" layoutY="460.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Add" />
+        <TextField fx:id="firstname" layoutX="196.0" layoutY="84.0" />
+        <TextField fx:id="lastname" layoutX="196.0" layoutY="128.0" />
+        <TextField fx:id="cameraNumber" layoutX="196.0" layoutY="171.0" />
+        <TextField fx:id="birthDay" layoutX="196.0" layoutY="209.0" />
+        <TextField fx:id="sex" layoutX="196.0" layoutY="252.0" />
+        <Button fx:id="back" layoutX="90.0" layoutY="460.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="25.0" prefWidth="80.0" text="Back" />
+      <Label layoutX="89.0" layoutY="298.0" text="Closing date :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="340.0" text="Relative Inf :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="380.0" text="Personality :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="415.0" text="Hierarchy :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="173.0" text="Camera № :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="closingDate" layoutX="196.0" layoutY="296.0" />
+      <TextField fx:id="relativeInf" layoutX="196.0" layoutY="338.0" />
+      <TextField fx:id="personality" layoutX="196.0" layoutY="378.0" />
+      <TextField fx:id="hierarchy" layoutX="196.0" layoutY="413.0" />
+    </children>
+</AnchorPane>
